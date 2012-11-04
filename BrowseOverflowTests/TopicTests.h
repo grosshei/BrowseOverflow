@@ -1,0 +1,13 @@
+//
+//  TopicTests.h
+//  BrowseOverflow
+//
+//  Created by Michael Grossheim on 11/3/12.
+//
+//
+
+#import <SenTestingKit/SenTestingKit.h>
+
+@interface TopicTests : SenTestCase
+
+@end
