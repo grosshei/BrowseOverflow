@@ -7,6 +7,7 @@
 //
 
 #import "Topic.h"
+#import "Question.h"
 
 @implementation Topic
 
@@ -16,12 +17,17 @@
     if(self = [super init]){
         name = [newName copy];
         tag = [newTag copy];
+        questions = [NSArray array];
     }
     return self;
 }
 
+-(void)addQuestion: (Question *)question{
+    questions = [questions arrayByAddingObject: question];
+}
+
 -(NSArray *)recentQuestions{
-    return [NSArray array];
+    return questions;
 }
 
 @end

@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Topic : NSObject
-
-
+@interface Topic : NSObject {
+    NSArray *questions;
+}
 
 @property (readonly) NSString *name;
 @property (readonly) NSString *tag;
