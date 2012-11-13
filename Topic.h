@@ -16,5 +16,6 @@
 @property (readonly) NSString *tag;
 
 -(id)initWithName:(NSString *)newName tag:newTag;
+-(NSArray *)recentQuestions;
 
 @end
