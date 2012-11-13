@@ -10,11 +10,12 @@
 
 @implementation Topic
 
-@synthesize name;
+@synthesize name, tag;
 
--(id)initWithName:(NSString *)newName{
+-(id)initWithName:(NSString *)newName tag:newTag{
     if(self = [super init]){
         name = [newName copy];
+        tag = [newTag copy];
     }
     return self;
 }

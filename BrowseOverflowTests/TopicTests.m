@@ -11,14 +11,24 @@
 
 @implementation TopicTests
 
+-(void)setUp{
+    topic = [[Topic alloc] initWithName:@"iPhone" tag:@"iphone"];
+}
+
+-(void)tearDown{
+    topic = nil;
+}
+
 -(void) testThatTopicExists{
-    Topic *newTopic = [[Topic alloc] init];
-    STAssertNotNil(newTopic, @"Should be able to create a topic instance");
+    STAssertNotNil(topic, @"Should be able to create a topic instance");
 }
 
 -(void) testThatTopicCanBeNamed{
-    Topic *namedTopic = [[Topic alloc] initWithName:@"iPhone"];
-    STAssertEqualObjects(namedTopic.name, @"iPhone", @"The topic should have the name given");
+    STAssertEqualObjects(topic.name, @"iPhone", @"The topic should have the name given");
+}
+
+-(void) testThatTopicHasATag{
+    STAssertEqualObjects(topic.tag, @"iphone", @"Topics need to have tags");
 }
 
 @end
