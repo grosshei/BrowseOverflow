@@ -8,6 +8,11 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
+@class Question;
+
 @interface QuestionTests : SenTestCase
+{
+    Question *question;
+}
 
 @end

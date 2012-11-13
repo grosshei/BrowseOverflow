@@ -10,9 +10,6 @@
 #import "Question.h"
 
 @implementation QuestionTests
-{
-    Question *question;
-}
 
 -(void)setUp
 {
